@@ -361,7 +361,7 @@ func libwdiReinstallLog() (string, error) {
 	return readFile(
 		"libwdi reinstall log",
 		"AppData",
-		"TREZOR Bridge",
+		"JuBiter Bridge",
 		"wdi-log.txt",
 	)
 }

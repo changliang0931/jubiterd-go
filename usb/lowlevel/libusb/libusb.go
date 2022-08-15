@@ -55,8 +55,18 @@ extern void goLibusbLog(const char *s);
 	#include "os/threads_posix.c"
 	#include "os/events_posix.c"
 	#include "os/darwin_usb.c"
+// #elif defined(OS_WINDOWS)
+// 	#define HARDCODED_LIBUSB_DEVICE_FILTER "VID_1209"
+// 	#include <oledlg.h>
+// 	#include "libusbi.h"
+// 	#include "os/threads_windows.c"
+// 	#include "os/events_windows.c"
+// 	#include "os/windows_common.c"
+// 	#include "os/windows_usbdk.c"
+// 	#include "os/windows_winusb.c"
+// #endif
 #elif defined(OS_WINDOWS)
-	#define HARDCODED_LIBUSB_DEVICE_FILTER "VID_1209"
+	#define HARDCODED_LIBUSB_DEVICE_FILTER "VID_096E"
 	#include <oledlg.h>
 	#include "libusbi.h"
 	#include "os/threads_windows.c"

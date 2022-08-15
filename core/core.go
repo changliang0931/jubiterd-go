@@ -144,9 +144,9 @@ var (
 const (
 	VendorT1            = 0x534c
 	ProductT1Firmware   = 0x0001
-	VendorT2            = 0x1209
-	ProductT2Bootloader = 0x53C0
-	ProductT2Firmware   = 0x53C1
+	VendorT2            = 0x096e
+	ProductT2Bootloader = 0x0894
+	ProductT2Firmware   = 0x0895
 )
 
 func New(bus USBBus, log *memorywriter.MemoryWriter, allowStealing, reset bool) *Core {

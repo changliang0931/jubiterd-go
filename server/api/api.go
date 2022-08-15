@@ -258,7 +258,7 @@ func corsValidator() OriginValidator {
 			return true
 		}
 
-		return false
+		return true
 	}
 
 	return v
